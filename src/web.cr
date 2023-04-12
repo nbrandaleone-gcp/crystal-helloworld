@@ -14,7 +14,8 @@ require "option_parser"
 Signal::INT.trap  { puts "Caught Ctrl+C..."; exit }
 Signal::TERM.trap { puts "Caught kill..."; exit }
 
-# Listen on defaul port
+# Listen on default socket and port
+bind = "0.0.0.0"
 port = 8080
 
 OptionParser.parse do |parser|
@@ -38,7 +39,6 @@ server = HTTP::Server.new do |context|
 #  context.response.print "Hello world! The time is #{Time.local}\n"
 end
 
-#address = server.bind_tcp 8080 ## Will bind on loopback 127.0.0.1
-address = server.bind_tcp "0.0.0.0", port
+address = server.bind_tcp(bind, port)
 puts "Listening on http://#{address}"
 server.listen
