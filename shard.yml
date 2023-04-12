@@ -1,0 +1,13 @@
+name: crystal-helloworld
+version: 0.1.0
+
+authors:
+  - Nick Brandaleone <nbrand@mac.com>
+
+targets:
+  crystal-helloworld:
+    main: src/web.cr
+
+crystal: 1.7.3
+
+license: MIT
