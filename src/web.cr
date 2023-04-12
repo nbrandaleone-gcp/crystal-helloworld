@@ -14,9 +14,13 @@ require "option_parser"
 Signal::INT.trap  { puts "Caught Ctrl+C..."; exit }
 Signal::TERM.trap { puts "Caught kill..."; exit }
 
-# Listen on default socket and port
+# Listen on default socket 
 bind = "0.0.0.0"
-port = 8080
+
+# Grab port from environmental variable. All keys/values are strings.
+# Can be overriden via --port flag
+ENV["PORT"] ||= "8080"
+port = ENV["PORT"].to_i
 
 OptionParser.parse do |parser|
   parser.on("-p PORT", "--port PORT", "define port (8080) for server") do |opt|
