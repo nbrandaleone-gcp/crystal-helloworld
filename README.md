@@ -48,6 +48,11 @@ It is now possible to send requests via a local proxy, even if the service is au
 gcloud beta run services proxy
 ```
 
+## Local development file watcher
+```bash
+./dev/watch.sh web
+```
+
 ## Clean up
 ``` bash
 gcloud run services delete crystal-webserver

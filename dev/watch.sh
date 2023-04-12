@@ -1,4 +1,4 @@
-#/bin/env/bash
+#!/usr/bin/env bash
 # watch.sh
 
 # https://crystal-lang.org/2019/04/30/watch-run-change-build-repeat/
@@ -9,4 +9,4 @@
 # Use: ./dev/watch.sh awesome_app first second
 
 cd $(dirname $0)/..
-watchexec -r -w src --signal SIGTERM -- ./dev/build-exec.sh "$@"
+watchexec -r -w src -- ./dev/build-exec.sh "$@"

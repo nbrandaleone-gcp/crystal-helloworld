@@ -1,4 +1,4 @@
-#!/bin/env/bash
+#!/usr/bin/env bash
 # buid-exec.sh
 
 # Rebuild file and run binary when changes occur

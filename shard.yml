@@ -5,7 +5,7 @@ authors:
   - Nick Brandaleone <nbrand@mac.com>
 
 targets:
-  crystal-helloworld:
+  web:
     main: src/web.cr
 
 crystal: 1.7.3
