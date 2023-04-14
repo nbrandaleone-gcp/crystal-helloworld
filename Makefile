@@ -17,6 +17,7 @@ IMAGE_URI="gcr.io/$(PROJECT_ID)/$(IMAGE_REPO_NAME):$(IMAGE_TAG)"
 
 .PHONY: all
 ## Build and deploy the container 
+# Similar to `gcloud run deploy --source=.`
 all: build/cloud deploy
 
 .PHONY: watch

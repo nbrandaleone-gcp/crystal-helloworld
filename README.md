@@ -57,3 +57,9 @@ gcloud beta run services proxy
 ``` bash
 gcloud run services delete crystal-webserver
 ```
+
+# Resources
+1. [GNU make](https://www.gnu.org/software/make/manual/make.html)
+2. [The Art of Makefiles](https://levelup.gitconnected.com/the-art-of-makefiles-a-technical-guide-to-automated-building-6bb43fefe1ed)
+3. [Makefile Best Practices](https://docs.cloudposse.com/reference/best-practices/make-best-practices/)
+4. [Learn Makefiles](https://makefiletutorial.com/)
