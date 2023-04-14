@@ -21,7 +21,7 @@ IMAGE_URI="gcr.io/$(PROJECT_ID)/$(IMAGE_REPO_NAME):$(IMAGE_TAG)"
 all: build/cloud deploy
 
 .PHONY: watch
-## Recompile upon any file change in src
+## Locally run program with dynamic recompile
 watch:
 	./dev/watch.sh $(TARGET)
 
