@@ -51,17 +51,17 @@ Available targets:
   watch                               Locally run program with dynamic recompile
 ```
 
-# Resources
-## Cloud Run
+## Resources
+### Cloud Run
 1. https://github.com/GoogleCloudPlatform/cloud-run-button
 
-## GNU Make
+### GNU Make
 1. [GNU make](https://www.gnu.org/software/make/manual/make.html)
 2. [The Art of Makefiles](https://levelup.gitconnected.com/the-art-of-makefiles-a-technical-guide-to-automated-building-6bb43fefe1ed)
 3. [Makefile Best Practices](https://docs.cloudposse.com/reference/best-practices/make-best-practices/)
 4. [Learn Makefiles](https://makefiletutorial.com/)
 
-# Notes
+## Notes
 Send authorization token, if unauthenticated is not allowed
 ``` bash
 curl --header "Authorization: Bearer $(gcloud auth print-identity-token)" [URL]
